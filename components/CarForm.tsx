@@ -25,7 +25,7 @@ export const CarForm = ({dialogRef}: any) => {
     const handleSubmit = async (e: FormEvent) => {
 		e.preventDefault();
 
-		if (car.brand === "" || car.model === "" || car.year === 0 || car.rentalPrice === 0) {
+		if (car.brand === "" || car.model === "" || car.description === "" || car.rentalPrice === 0) {
 			toast.error('Favor preencher todos os campos!', notification.options as ToastOptions);
 			return;
 		}
