@@ -10,7 +10,7 @@ export const CarForm = ({dialogRef}: any) => {
 	const [car, setCar] = useState<carType>({
         brand: "",
         model: "",
-        year:  0,
+        year:  2000,
         img: "",
         description: "",
         category: "",
