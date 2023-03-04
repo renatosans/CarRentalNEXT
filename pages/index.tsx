@@ -3,6 +3,7 @@ import { carType } from '../utils/types'
 import { useState, useEffect } from 'react'
 import styles from '../styles/Home.module.scss'
 import Draggable from 'react-draggable'
+import { Button, Dialog } from '@mui/material'
 import Slogan from '../components/Slogan'
 import CarList from '../components/CarList'
 import CarForm from '../components/CarForm'
@@ -41,7 +42,9 @@ export default function Home() {
       </Head>
       <Toaster/>
 			<Draggable>
+        <Dialog open={open} onClose={toggle} BackdropProps={{ style: { backgroundColor: "transparent" } }} >
           <CarForm dialogRef={{ toggle }} />
+        </Dialog>
 			</Draggable>
 
       <video preload="auto" autoPlay loop muted><source src='/video.mp4' type="video/mp4"/></video>
