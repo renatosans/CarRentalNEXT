@@ -68,7 +68,7 @@ export const CarForm = ({dialogRef}: any) => {
 		}
 
         setCar({...car, [e.target.name]: e.target.value, });
-	};
+	}
 
     return (
     <>
@@ -78,12 +78,10 @@ export const CarForm = ({dialogRef}: any) => {
             <input type="text" className={styles.input} name="brand" value={car.brand} onChange={onChange} />
             <label htmlFor="model" className={styles.label} >Modelo</label>
             <input type="text" className={styles.input} name="model" value={car.model} onChange={onChange} />
-            <label htmlFor="year" className={styles.label} >Ano</label>
-            <input type="number" step="10" name="year" value={car.year} onChange={onChange} />
             <label htmlFor="description" className={styles.label} >Descrição</label>
             <input type="text" className={styles.input} name="description" value={car.description} onChange={onChange} />
             <label htmlFor="rentalPrice">Diária</label>
-            <input type="number" step="10" name="rentalPrice" value={car.rentalPrice} onChange={onChange} />
+            <input type="text" className={styles.input} name="rentalPrice" value={car.rentalPrice} onChange={onChange} />
 
             <label htmlFor="foto" className={styles.label} >Foto</label>
             <div className={styles.fileDialog}>
