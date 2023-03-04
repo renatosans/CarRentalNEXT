@@ -2,8 +2,10 @@ import Head from 'next/head'
 import { carType } from '../utils/types'
 import { useState, useEffect } from 'react'
 import styles from '../styles/Home.module.scss'
+import Draggable from 'react-draggable'
 import Slogan from '../components/Slogan'
 import CarList from '../components/CarList'
+import CarForm from '../components/CarForm'
 import toast, { Toaster } from "react-hot-toast"
 
 
@@ -23,11 +25,11 @@ export default function Home() {
   }
 
   const addCar = () => {
-    toast.success(`NEW car`);
+    setOpen(true);
   }
 
   const addCustomer = () => {
-    setOpen(true);
+    toast.success(`NEW customer`);
   }
 
   return (
@@ -38,6 +40,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Toaster/>
+			<Draggable>
+          <CarForm dialogRef={{ toggle }} />
+			</Draggable>
+
       <video preload="auto" autoPlay loop muted><source src='/video.mp4' type="video/mp4"/></video>
       <Slogan sentence1='For' sentence2='memorable' sentence3='trips'>The cheapest rates</Slogan>
       <div className={styles.actions}>

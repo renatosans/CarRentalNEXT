@@ -88,7 +88,7 @@ export const CarForm = ({dialogRef}: any) => {
             <label htmlFor="foto" className={styles.label} >Foto</label>
             <div className={styles.fileDialog}>
                 <input type="file" name="foto" accept=".gif,.jpg,.jpeg,.png" onChange={onChange} />
-                <img style={{'width':'100%'}} src={"data:" + image.imageFormat + ", " + image.imageData} alt={ingredient.ingredient_name}></img>
+                <img style={{'width':'100%'}} src={"data:" + image.imageFormat + ", " + image.imageData} alt={"car photo"}></img>
             </div>
 
             <button type="submit" className={styles.button}>Salvar</button>
