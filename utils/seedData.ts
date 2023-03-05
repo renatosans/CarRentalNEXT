@@ -6,7 +6,7 @@ export const allCars: carType[] = [
       brand: "Hyundai",
       model: "i30",
       year: 2016,
-      img: "/img/hyundai_i30.png",
+      img: "/img/cars/hyundai_i30.png",
       description: "1.8 MPI 16V GASOLINA 4P AUTOMATICO",
       category: "hatch",
       rentalPrice: 81
@@ -15,7 +15,7 @@ export const allCars: carType[] = [
       brand: "Toyota",
       model: "yaris",
       year: 2019,
-      img: "/img/toyota_yaris.png",
+      img: "/img/cars/toyota_yaris.png",
       description: "1.3 16V XL Multidrive",
       category: "hatch",
       rentalPrice: 84
@@ -24,13 +24,22 @@ export const allCars: carType[] = [
       brand: "Volkswagen",
       model: "golf",
       year: 2017,
-      img: "/img/volkswagen_golf.png",
+      img: "/img/cars/volkswagen_golf.png",
       description: "1.4 Tsi Highline Flex Aut.5p",
       category: "hatch",
       rentalPrice: 79
+    },
+    {
+      brand: "Honda",
+      model: "fit",
+      year: 2019,
+      img: "/img/cars/honda_fit.png",
+      description: "1.5 LX 16V FLEX 4P AUTOMÁTICO",
+      category: "hatch",
+      rentalPrice: 76
     }
   ]
-  
+
   export const allCustomers: customerType[] = [
     {
       firstName: "Herbert",  
