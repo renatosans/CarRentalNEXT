@@ -80,12 +80,12 @@ export const CarForm = ({dialogRef}: any) => {
             <input type="text" className={styles.input} name="model" value={car.model} onChange={onChange} />
             <label htmlFor="description" className={styles.label} >Descrição</label>
             <input type="text" className={styles.input} name="description" value={car.description} onChange={onChange} />
-            <label htmlFor="rentalPrice">Diária</label>
+            <label htmlFor="rentalPrice" className={styles.label} >Diária</label>
             <input type="text" className={styles.input} name="rentalPrice" value={car.rentalPrice} onChange={onChange} />
 
-            <label htmlFor="foto" className={styles.label} >Foto</label>
+            <label htmlFor="img" className={styles.label} >Foto</label>
             <div className={styles.fileDialog}>
-                <input type="file" name="foto" accept=".gif,.jpg,.jpeg,.png" onChange={onChange} />
+                <input type="file" name="img" accept=".gif,.jpg,.jpeg,.png" onChange={onChange} />
                 <img style={{'width':'100%'}} src={"data:" + image.imageFormat + ", " + image.imageData} alt={"car photo"}></img>
             </div>
 
