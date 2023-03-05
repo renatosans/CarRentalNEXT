@@ -24,7 +24,7 @@ const saveCar = async (req: NextApiRequest, res: NextApiResponse) => {
  
 	const nextNumber = Math.round(Math.random() * 99999);
 	const timeStampSalt = `NaN${Date.now()}`;
-	const dir = '/img/cars';
+	const dir = '/img/cars/';
 	const filename = `vehicle_${timeStampSalt}_${nextNumber.toString()}.jpg`;
 	const buffer = Buffer.from(imageData, 'base64');
 	const filePath: fs.PathLike = path.resolve(`./public${dir}`, filename);
@@ -38,7 +38,7 @@ const saveCar = async (req: NextApiRequest, res: NextApiResponse) => {
 	const img: string = dir + filename;
 	const newCar: carType = { brand, model, year, img, description, category, rentalPrice };
 
-    prisma.car.create({ data: req.body })
+    prisma.car.create({ data: newCar })
     .then((result) => res.send(result))
 	.catch((error) => res.status(500).send("Error: " + error.message))
 }
