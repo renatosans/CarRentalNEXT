@@ -15,7 +15,7 @@ export const allCars: carType[] = [
       brand: "Fiat",
       model: "cronos",
       year: 2021,
-      img: "img/cars/fiat_cronos.png",
+      img: "/img/cars/fiat_cronos.png",
       description: "1.8 E.Torq Flex Precision AT6",
       category: "sedan",
       rentalPrice: 77,
