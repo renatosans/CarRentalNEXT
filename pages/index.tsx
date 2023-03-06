@@ -48,7 +48,7 @@ export default function Home() {
 			</Draggable>
 
       <video preload="auto" autoPlay loop muted><source src='/video.mp4' type="video/mp4"/></video>
-      <Slogan sentence1='For' sentence2='memorable' sentence3='trips'>The cheapest rates</Slogan>
+      <Slogan message='For memorable trips'>The cheapest rates</Slogan>
       <div className={styles.actions}>
         <button className={styles.button} onClick={addCar}>Add Car</button>
         <button className={styles.button} onClick={addCustomer}>Add Customer</button>

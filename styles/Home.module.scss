@@ -31,31 +31,15 @@
   border-radius: 15px;
 }
 
-.hero_text{
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
-
-  font-family: 'Quicksand', sans-serif;
-  font-size: 3rem;
-  word-spacing: 5px;
+.gradient_text {
+  font-family: 'Orbitron';
+  font-size: 40px;
   text-align: center;
-
-  .txt{
-      display: flex;
-      gap: 30px;
-
-      :first-child{
-          color: #008c45;
-      }
-
-      :last-child{
-          color: #cd212a;
-      }
-
-  }
+  background-image: linear-gradient(to right, #131014, #3730A3 50%);
+  -webkit-background-clip: text;
+  color: transparent;
 }
+
 
 .hero_lines{
   display: flex;
@@ -68,10 +52,10 @@
   }
 
   :first-child{
-      background-color: #008c45;
+      background-color: #454545;
   }
   :last-child{
-      background-color: #cd212a;
+      background-color: #3730A3;
   }
 }
 
