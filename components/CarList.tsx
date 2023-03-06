@@ -11,8 +11,8 @@ type props = {
 const CarList = ({items, desc}: props) => {
   return (
     <div className={styles.container}>
-      <h1 className={'styles.title'}>Best Deal Guarantee</h1>
-      <p className={'styles.desc'}>{desc}</p>
+      <h1 className={styles.title}>Best Deal Guarantee</h1>
+      <p className={styles.desc}>{desc}</p>
       <div className={styles.wrapper}>{
         (items)
         ? items.map((car: carType) => <CarDetails car={car} currency={"U$"} adv={""} />)
