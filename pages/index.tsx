@@ -15,11 +15,15 @@ export default function Home() {
   const [open, setOpen] = useState(false);
   const [cars, setCars] = useState<carType[]>();
 
-  useEffect(() => {
+  const getCars = () => {
     fetch('api/cars')
     .then(resp => resp.json())
     .then(resultSet => setCars(resultSet))
     .catch(error => console.error(error))
+  }
+
+  useEffect(() => {
+    getCars();
   }, []);
 
   const toggle = () => {
@@ -44,7 +48,7 @@ export default function Home() {
       <Toaster/>
 			<Draggable>
         <Dialog open={open} onClose={toggle} BackdropProps={{ style: { backgroundColor: "transparent" } }} >
-          <CarForm dialogRef={{ toggle }} />
+          <CarForm parentRef={{ toggle, getCars }} />
         </Dialog>
 			</Draggable>
 

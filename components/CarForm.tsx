@@ -5,7 +5,7 @@ import { notification } from '../utils/notification'
 import toast, { Toaster, ToastOptions } from 'react-hot-toast'
 
 
-export const CarForm = ({dialogRef}: any) => {
+export const CarForm = ({parentRef}: any) => {
 
 	const [car, setCar] = useState<carType>({
         brand: "",
@@ -40,7 +40,8 @@ export const CarForm = ({dialogRef}: any) => {
             if(response.ok)
             {
                 toast.success('Registro salvo com sucesso', notification.options as ToastOptions);
-                dialogRef.toggle();
+                parentRef.getCars();  // faz o refresh da lista de veículos
+                parentRef.toggle();
                 return;
             }
 
