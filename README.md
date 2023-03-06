@@ -1,7 +1,7 @@
 # CarRentalNEXT
 Online car rental written in Nextjs, Prisma and Typescript
 
-![screenshot](public/img/screenshot.jpg)
+![screenshot](public/img/screenshot.png)
 
 ## Steps to run the project
 - npm install
