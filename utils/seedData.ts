@@ -12,13 +12,13 @@ export const allCars: carType[] = [
       rentalPrice: 81
     },
     {
-      brand: "Fiat",
-      model: "cronos",
-      year: 2021,
-      img: "/img/cars/fiat_cronos.png",
-      description: "1.8 E.Torq Flex Precision AT6",
-      category: "sedan",
-      rentalPrice: 77,
+      brand: "Honda",
+      model: "fit",
+      year: 2019,
+      img: "/img/cars/honda_fit.png",
+      description: "1.5 LX 16V FLEX 4P AUTOMÁTICO",
+      category: "hatch",
+      rentalPrice: 76
     },
     {
       brand: "Toyota",
@@ -37,15 +37,6 @@ export const allCars: carType[] = [
       description: "1.4 Tsi Highline Flex Aut.5p",
       category: "hatch",
       rentalPrice: 79
-    },
-    {
-      brand: "Honda",
-      model: "fit",
-      year: 2019,
-      img: "/img/cars/honda_fit.png",
-      description: "1.5 LX 16V FLEX 4P AUTOMÁTICO",
-      category: "hatch",
-      rentalPrice: 76
     }
   ]
 
