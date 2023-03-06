@@ -16,8 +16,6 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 	}
 }
 
-// imagem da massa de dados de testes está bugada, não é tentativa de invasão
-
 // TODO : >>   Fix image upload    <<
 // Open INSOMNIA to test the endpoint ( http://localhost:3000/api/ingredients ),  use   sampleData.json
 // Expected behaviour : write the image to File System and store the image relative path in the database
