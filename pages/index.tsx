@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.scss'
 import Draggable from 'react-draggable'
 import { Button, Dialog } from '@mui/material'
 import Slogan from '../components/Slogan'
+import Banner from '../components/Banner'
 import CarList from '../components/CarList'
 import CarForm from '../components/CarForm'
 import toast, { Toaster } from "react-hot-toast"
@@ -54,6 +55,9 @@ export default function Home() {
         <button className={styles.button} onClick={addCustomer}>Add Customer</button>
       </div>
       <CarList items={cars} desc={'Car for rent. Available'} />
+      <Banner title='Our mission' offerings='🚗 Car rental 🔧 Services 📝 Info'>
+        Provide the best experience to our customers
+      </Banner>
     </div>
   )
 }

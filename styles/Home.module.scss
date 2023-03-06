@@ -1,3 +1,5 @@
+@import 'variables.scss';
+
 .container {
   padding: 0 2rem;
 }
@@ -57,6 +59,43 @@
   }
   :last-child{
       background-color: #3730A3;
+  }
+}
+
+.ad {
+  display: flex;
+  padding: 20px;
+  min-height: calc(100vh - $footer_height - $navbar_height);
+
+  .ad_column{
+      width: 100%;
+  }
+
+  .ad_column:first-child{
+      padding: $horizontal_padding;
+
+      h2{
+          color: white;
+          font-family: $normal_font;
+          font-size: 3rem;
+          word-spacing: 10px;
+      }
+      p{
+          color: white;
+          font-family: $normal_font;
+          font-size: 1.2rem;
+          margin-top: 20px;
+      }
+  }
+
+  .ad_column:last-child{
+      position: relative;
+      width: 100%;
+  
+      image{
+          width: 100%;
+          height: 100%;
+      }
   }
 }
 
