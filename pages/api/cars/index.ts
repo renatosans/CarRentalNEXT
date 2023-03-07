@@ -17,7 +17,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 }
 
 // TODO : >>   Fix image upload    <<
-// Open INSOMNIA to test the endpoint ( http://localhost:3000/api/ingredients ),  use   sampleData.json
+// Open INSOMNIA to test the endpoint ( http://localhost:3000/api/cars ),  use   sampleData.json
 // Expected behaviour : write the image to File System and store the image relative path in the database
 const saveCar = async (req: NextApiRequest, res: NextApiResponse) => {
     const { brand, model, year, description, category, rentalPrice, imageFormat, imageData } = req.body;
