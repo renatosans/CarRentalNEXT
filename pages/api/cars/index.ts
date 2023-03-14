@@ -37,7 +37,7 @@ const saveCar = async (req: NextApiRequest, res: NextApiResponse) => {
 	});
 
 	const img: string = dir + filename;
-	const newCar: carType = { brand, model, year, img, description, category, rentalPrice };
+	const newCar: carType = { brand, model, year, img, description, category, rentalPrice: parseFloat(rentalPrice)};
 
     prisma.car.create({ data: newCar })
     .then((result) => res.send(result))
