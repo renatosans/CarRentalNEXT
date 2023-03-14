@@ -5,7 +5,10 @@ Online car rental written in Nextjs, Prisma and Typescript
 
 ## Steps to run the project
 - npm install
-- .env
-- prisma db push     ( you can also run the sql scripts at prisma folder)
-- prisma db seed     ( you may need  > npm install -g tsx )
 - npm run dev
+
+## Steps to create de database
+- start mongo instance as replica set   ( mongosh >  rs.initiate  )
+- .env
+- prisma db push
+- prisma db seed         ( you may need  > npm install -g tsx )
